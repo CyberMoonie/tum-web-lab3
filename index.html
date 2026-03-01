@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pre-register for an upcoming mysterious metroidvania adventure">
+    <title>Shadow Depths - Pre-Register Now</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation — migrated to Bootstrap navbar component -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Shadow Depths</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Email Signup -->
+    <section id="hero" class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="hero-title display-3 fw-bold mb-3">Enter the Shadow Depths</h1>
+            <p class="hero-subtitle lead mb-4">A mysterious metroidvania adventure awaits</p>
+
+            <!-- Call to Action: Email Form -->
+            <form class="signup-form d-flex flex-column flex-sm-row gap-2 justify-content-center mx-auto mb-3">
+                <input type="email" placeholder="Enter your email" required class="form-control email-input">
+                <button type="submit" class="btn btn-primary-custom btn-lg text-nowrap">Pre-Register Now</button>
+            </form>
+
+            <p class="hero-note small mt-2">Be among the first to explore the depths. Limited beta access.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">The Mystery Unfolds</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="about-text text-center">
+                        Deep beneath the forgotten ruins lies a world of shadow and secrets.
+                        In <strong>Shadow Depths</strong>, you'll explore interconnected caverns,
+                        unlock powerful abilities, and uncover the truth behind an ancient civilization.
+                    </p>
+                    <p class="about-text text-center">
+                        Every corner hides a mystery. Every power you gain opens new paths.
+                        Will you dare to descend into the unknown?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section — using Bootstrap grid -->
+    <section id="features" class="features py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Game Features</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card text-center p-4 rounded-3 h-100">
+                        <div class="feature-icon display-4 mb-3">🗺️</div>
+                        <h3 class="h5 mb-2">Interconnected World</h3>
+                        <p>Explore a vast underground realm with seamless, non-linear progression</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card text-center p-4 rounded-3 h-100">
+                        <div class="feature-icon display-4 mb-3">⚔️</div>
+                        <h3 class="h5 mb-2">Intense Combat</h3>
+                        <p>Master fluid combat mechanics and face challenging enemies</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card text-center p-4 rounded-3 h-100">
+                        <div class="feature-icon display-4 mb-3">✨</div>
+                        <h3 class="h5 mb-2">Unlock Abilities</h3>
+                        <p>Gain new powers that transform how you explore and fight</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card text-center p-4 rounded-3 h-100">
+                        <div class="feature-icon display-4 mb-3">🎭</div>
+                        <h3 class="h5 mb-2">Deep Lore</h3>
+                        <p>Uncover the mysteries of a lost civilization through environmental storytelling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section — using Bootstrap grid -->
+    <section id="gallery" class="gallery py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Glimpses of the Depths</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item rounded-3 overflow-hidden">
+                        <img src="images/gp-1.png" alt="Shadow Depths gameplay screenshot 1" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item rounded-3 overflow-hidden">
+                        <img src="images/gp-2.png" alt="Shadow Depths gameplay screenshot 2" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item rounded-3 overflow-hidden">
+                        <img src="images/gp-3.png" alt="Shadow Depths gameplay screenshot 3" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p class="mb-1">Pre-register now for exclusive beta access</p>
+            <p class="small mb-0">&copy; 2026 Shadow Depths. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

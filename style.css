@@ -1,0 +1,201 @@
+/* ============================================
+   Shadow Depths — Custom Theme Styles
+   (Bootstrap 5 handles reset & base utilities)
+   ============================================ */
+
+/* Color Scheme */
+:root {
+    --primary-color: #6a0dad;
+    --secondary-color: #9d4edd;
+    --dark-bg: #1a1a2e;
+    --darker-bg: #0f0f1e;
+    --text-light: #f0f0f0;
+    --text-gray: #b0b0b0;
+    --accent: #e94560;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.navbar {
+    background-color: var(--darker-bg) !important;
+}
+
+.navbar-brand {
+    color: var(--secondary-color) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -2;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    color: var(--text-gray);
+}
+
+.hero-note {
+    color: var(--text-gray);
+}
+
+/* ============================================
+   SIGNUP FORM
+   ============================================ */
+.signup-form {
+    max-width: 500px;
+}
+
+.email-input {
+    border: 2px solid var(--secondary-color) !important;
+    background-color: rgba(157, 78, 221, 0.1) !important;
+    color: var(--text-light) !important;
+}
+
+.email-input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 0.2rem rgba(233, 69, 96, 0.25) !important;
+}
+
+.email-input::placeholder {
+    color: var(--text-gray);
+}
+
+.btn-primary-custom {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(157, 78, 221, 0.3);
+    color: white;
+}
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+.section-title {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+/* About Section */
+.about {
+    background-color: var(--darker-bg);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
+.feature-card {
+    background-color: var(--darker-bg);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: var(--text-light);
+}
+
+.feature-card p {
+    color: var(--text-gray);
+}
+
+/* ============================================
+   GALLERY SECTION
+   ============================================ */
+.gallery {
+    background-color: var(--darker-bg);
+}
+
+.gallery-item {
+    border: 2px solid var(--secondary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.4);
+}
+
+.gallery-item img {
+    object-fit: cover;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: var(--darker-bg);
+    color: var(--text-gray);
+}
