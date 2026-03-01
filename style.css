@@ -311,3 +311,102 @@ body {
         font-size: 2rem !important;
     }
 }
+
+/* ============================================
+   MASCOT — Shadow Wisp
+   ============================================ */
+.mascot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    /* Hidden by default; shown via JS class */
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mascot-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mascot-svg {
+    width: 90px;
+    height: 90px;
+    animation: mascotBounce 2.5s ease-in-out infinite;
+}
+
+/* Bouncing + slight tilt animation */
+@keyframes mascotBounce {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-12px) rotate(3deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-8px) rotate(-3deg);
+    }
+}
+
+/* Tooltip — shown on hover */
+.mascot-tooltip {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    box-shadow: 0 4px 20px rgba(157, 78, 221, 0.4);
+    pointer-events: none;
+}
+
+/* Tooltip speech-bubble arrow */
+.mascot-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 28px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--secondary-color) transparent transparent transparent;
+}
+
+.mascot:hover .mascot-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Smaller mascot on mobile */
+@media (max-width: 768px) {
+    .mascot {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .mascot-svg {
+        width: 65px;
+        height: 65px;
+    }
+
+    .mascot-tooltip {
+        font-size: 0.75rem;
+        white-space: normal;
+        width: 180px;
+    }
+}
