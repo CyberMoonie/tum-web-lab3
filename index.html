@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pre-register for an upcoming mysterious metroidvania adventure">
-    <title>Shadow Depths - Pre-Register Now</title>
+    <meta name="description" content="Sergiu Munteanu — Professional black &amp; white photographer specializing in weddings, events, and fine-art portraits.">
+    <title>Sergiu Munteanu — Photography</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation — migrated to Bootstrap navbar component -->
+    <!-- Navigation — Bootstrap navbar component -->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Shadow Depths</a>
+            <a class="navbar-brand fw-semibold" href="#">Sergiu Munteanu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,172 +22,267 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Email Signup -->
+    <!-- Hero Section -->
     <section id="hero" class="hero d-flex align-items-center justify-content-center text-center">
         <div class="container">
-            <h1 class="hero-title display-3 fw-bold mb-3">Enter the Shadow Depths</h1>
-            <p class="hero-subtitle lead mb-4">A mysterious metroidvania adventure awaits</p>
-
-            <!-- Call to Action: Email Form -->
-            <form class="signup-form d-flex flex-column flex-sm-row gap-2 justify-content-center mx-auto mb-3">
-                <input type="email" placeholder="Enter your email" required class="form-control email-input">
-                <button type="submit" class="btn btn-primary-custom btn-lg text-nowrap">Pre-Register Now</button>
-            </form>
-
-            <p class="hero-note small mt-2">Be among the first to explore the depths. Limited beta access.</p>
+            <p class="hero-tagline small mb-2">Professional Photography</p>
+            <h1 class="hero-title display-3 fw-light mb-3">Sergiu Munteanu</h1>
+            <p class="hero-subtitle lead mb-4">Capturing timeless moments in black &amp; white</p>
+            <!-- Call to Action -->
+            <a href="#contact" class="btn btn-outline-gold btn-lg">Contact Me</a>
         </div>
     </section>
 
     <!-- Mobile-Only: Quick CTA Banner (visible only on small screens) -->
     <section class="mobile-cta-banner d-md-none text-center py-3">
         <div class="container">
-            <h2 class="h5 mb-2">🎮 Ready to Play?</h2>
-            <p class="small mb-2">Sign up now and get early access on your device</p>
-            <a href="#hero" class="btn btn-primary-custom btn-sm">Pre-Register</a>
+            <h2 class="h5 mb-2">📸 Book Your Session</h2>
+            <p class="small mb-2">Get in touch for weddings, events &amp; portraits</p>
+            <a href="#contact" class="btn btn-outline-gold btn-sm">Contact Me</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-4">The Mystery Unfolds</h2>
+            <h2 class="section-title text-center mb-4">About Me</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <p class="about-text text-center">
-                        Deep beneath the forgotten ruins lies a world of shadow and secrets.
-                        In <strong>Shadow Depths</strong>, you'll explore interconnected caverns,
-                        unlock powerful abilities, and uncover the truth behind an ancient civilization.
+                        I'm <strong>Sergiu Munteanu</strong>, a photographer driven by the power of light and shadow.
+                        My work focuses on black &amp; white imagery — stripping away color to reveal the raw emotion
+                        and timeless beauty in every frame.
                     </p>
                     <p class="about-text text-center">
-                        Every corner hides a mystery. Every power you gain opens new paths.
-                        Will you dare to descend into the unknown?
+                        From intimate wedding moments to vibrant event atmospheres, I document stories
+                        that deserve to be remembered. Every photograph I take is crafted with intention,
+                        patience, and a deep respect for the subject.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section — using Bootstrap grid -->
-    <section id="features" class="features py-5">
+    <!-- Services Section — using Bootstrap grid -->
+    <section id="services" class="services py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-4">Game Features</h2>
+            <h2 class="section-title text-center mb-4">Services</h2>
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-3">
-                    <div class="feature-card text-center p-4 rounded-3 h-100">
-                        <div class="feature-icon display-4 mb-3">🗺️</div>
-                        <h3 class="h5 mb-2">Interconnected World</h3>
-                        <p>Explore a vast underground realm with seamless, non-linear progression</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3 class="h5 mb-2">Weddings</h3>
+                        <p>Elegant, emotional coverage of your special day — from preparation to the last dance.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="feature-card text-center p-4 rounded-3 h-100">
-                        <div class="feature-icon display-4 mb-3">⚔️</div>
-                        <h3 class="h5 mb-2">Intense Combat</h3>
-                        <p>Master fluid combat mechanics and face challenging enemies</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="h5 mb-2">Events</h3>
+                        <p>Corporate gatherings, galas, and celebrations captured with a photojournalistic eye.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="feature-card text-center p-4 rounded-3 h-100">
-                        <div class="feature-icon display-4 mb-3">✨</div>
-                        <h3 class="h5 mb-2">Unlock Abilities</h3>
-                        <p>Gain new powers that transform how you explore and fight</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        </div>
+                        <h3 class="h5 mb-2">Portraits</h3>
+                        <p>Striking black &amp; white portraits that reveal character, depth, and personality.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="feature-card text-center p-4 rounded-3 h-100">
-                        <div class="feature-icon display-4 mb-3">🎭</div>
-                        <h3 class="h5 mb-2">Deep Lore</h3>
-                        <p>Uncover the mysteries of a lost civilization through environmental storytelling</p>
+                    <div class="service-card text-center p-4 h-100">
+                        <div class="service-icon mb-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        </div>
+                        <h3 class="h5 mb-2">Fine Art</h3>
+                        <p>Artistic compositions crafted for galleries, prints, and collectors of visual storytelling.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section — using Bootstrap grid -->
-    <section id="gallery" class="gallery py-5">
+    <!-- Portfolio / Gallery Section — using Bootstrap grid -->
+    <section id="portfolio" class="portfolio py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-4">Glimpses of the Depths</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="gallery-item rounded-3 overflow-hidden">
-                        <img src="images/gp-1.png" alt="Shadow Depths gameplay screenshot 1" class="img-fluid w-100">
+            <h2 class="section-title text-center mb-4">Portfolio</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="gallery-item overflow-hidden">
+                        <img src="images/2.jpeg" alt="Black and white wedding photograph by Sergiu Munteanu" class="img-fluid w-100">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="gallery-item rounded-3 overflow-hidden">
-                        <img src="images/gp-2.png" alt="Shadow Depths gameplay screenshot 2" class="img-fluid w-100">
+                <div class="col-6 col-md-3">
+                    <div class="gallery-item overflow-hidden">
+                        <img src="images/3.jpeg" alt="Fine art black and white photograph by Sergiu Munteanu" class="img-fluid w-100">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="gallery-item rounded-3 overflow-hidden">
-                        <img src="images/gp-3.png" alt="Shadow Depths gameplay screenshot 3" class="img-fluid w-100">
+                <div class="col-6 col-md-3">
+                    <div class="gallery-item overflow-hidden">
+                        <img src="images/4.jpeg" alt="Event photograph by Sergiu Munteanu" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="gallery-item overflow-hidden">
+                        <img src="images/5.jpeg" alt="Portrait photograph by Sergiu Munteanu" class="img-fluid w-100">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mobile-Only: Community Section (visible only on small screens) -->
-    <section class="mobile-community d-md-none text-center py-4">
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
         <div class="container">
-            <img src="images/hero-bg.png" alt="Shadow Depths world" class="mobile-community-img rounded-3 mb-3">
-            <h3 class="h5 mb-2">Join the Community</h3>
-            <p class="small text-muted-custom">Connect with other explorers. Share tips, secrets, and fan art.</p>
+            <h2 class="section-title text-center mb-4">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="contact-intro text-center mb-4">Interested in working together? Send me a message and let's create something beautiful.</p>
+                    <form class="contact-form">
+                        <div class="row g-3 mb-3">
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="Your Name" required class="form-control form-input">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" placeholder="Your Email" required class="form-control form-input">
+                            </div>
+                        </div>
+                        <textarea placeholder="Tell me about your project or event..." required class="form-control form-textarea mb-3" rows="5"></textarea>
+                        <button type="submit" class="btn btn-outline-gold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile-Only: Follow Section (visible only on small screens) -->
+    <section class="mobile-follow d-md-none text-center py-4">
+        <div class="container">
+            <img src="images/1.jpeg" alt="Sergiu Munteanu Photography" class="mobile-follow-img rounded-3 mb-3">
+            <h3 class="h5 mb-2">Follow My Work</h3>
+            <p class="small text-muted-custom">Stay connected and see the latest shoots, stories, and behind-the-scenes moments.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="#" class="btn btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="#" class="btn btn-outline-gold btn-sm" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center py-4">
-        <div class="container">
-            <p class="mb-1">Pre-register now for exclusive beta access</p>
-            <p class="small mb-0">&copy; 2026 Shadow Depths. All rights reserved.</p>
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="footer-brand mb-2">Sergiu Munteanu Photography</p>
+            <div class="footer-socials d-flex justify-content-center gap-3 mb-2">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.86 2.86 0 0 1 .84.13v-3.5a6.37 6.37 0 0 0-.84-.05A6.34 6.34 0 0 0 3.15 15.3a6.34 6.34 0 0 0 10.86 4.48 6.3 6.3 0 0 0 1.86-4.49V8.76a8.26 8.26 0 0 0 4.84 1.56v-3.5a4.84 4.84 0 0 1-1.12-.13z"/></svg>
+                </a>
+            </div>
+            <p class="small mb-0 footer-copy">&copy; 2026 Sergiu Munteanu. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Lightbox Overlay -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full-size photograph">
+    </div>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Mascot: Shadow Wisp — a friendly shadow spirit -->
+    <!-- Mascot: Friendly Camera — a cute camera character related to photography -->
     <div class="mascot" id="mascot">
-        <div class="mascot-tooltip">Welcome, brave explorer!<br>Pre-register &amp; descend into the depths!</div>
+        <div class="mascot-tooltip">Hey there! 👋<br>Let's capture your story — reach out!</div>
         <svg class="mascot-svg" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-            <!-- Body — a glowing ghost-like wisp -->
             <defs>
-                <radialGradient id="wispGlow" cx="50%" cy="40%" r="50%">
-                    <stop offset="0%" stop-color="#c77dff"/>
-                    <stop offset="100%" stop-color="#6a0dad"/>
-                </radialGradient>
-                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#9d4edd" flood-opacity="0.7"/>
+                <linearGradient id="cameraBody" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#444"/>
+                    <stop offset="100%" stop-color="#222"/>
+                </linearGradient>
+                <filter id="camShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#c9a96e" flood-opacity="0.5"/>
                 </filter>
             </defs>
-            <!-- Wisp body -->
-            <path d="M60 10 C30 10, 15 40, 15 60 C15 80, 30 95, 40 105 Q45 110, 50 100 Q55 110, 60 105 Q65 110, 70 100 Q75 110, 80 105 C90 95, 105 80, 105 60 C105 40, 90 10, 60 10 Z"
-                  fill="url(#wispGlow)" filter="url(#shadow)" opacity="0.92"/>
-            <!-- Eyes -->
-            <ellipse cx="45" cy="52" rx="7" ry="9" fill="#f0f0f0"/>
-            <ellipse cx="75" cy="52" rx="7" ry="9" fill="#f0f0f0"/>
-            <ellipse cx="46" cy="53" rx="3.5" ry="4.5" fill="#1a1a2e"/>
-            <ellipse cx="76" cy="53" rx="3.5" ry="4.5" fill="#1a1a2e"/>
-            <!-- Friendly smile -->
-            <path d="M48 70 Q60 82, 72 70" stroke="#f0f0f0" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Camera body -->
+            <rect x="15" y="35" width="90" height="60" rx="12" fill="url(#cameraBody)" filter="url(#camShadow)"/>
+            <!-- Flash bump -->
+            <rect x="20" y="25" width="25" height="14" rx="4" fill="#333"/>
+            <!-- Flash -->
+            <rect x="26" y="28" width="12" height="8" rx="2" fill="#c9a96e" opacity="0.8"/>
+            <!-- Lens outer ring -->
+            <circle cx="60" cy="65" r="22" fill="#1a1a1a" stroke="#c9a96e" stroke-width="2"/>
+            <!-- Lens inner -->
+            <circle cx="60" cy="65" r="15" fill="#111"/>
+            <!-- Lens reflection -->
+            <circle cx="60" cy="65" r="10" fill="#1a1a1a"/>
+            <ellipse cx="54" cy="59" rx="4" ry="5" fill="rgba(255,255,255,0.12)" transform="rotate(-20 54 59)"/>
+            <!-- Eyes (on the camera body, above the lens) -->
+            <ellipse cx="45" cy="48" rx="5" ry="6" fill="#f5f5f5"/>
+            <ellipse cx="75" cy="48" rx="5" ry="6" fill="#f5f5f5"/>
+            <ellipse cx="46" cy="49" rx="2.5" ry="3" fill="#111"/>
+            <ellipse cx="76" cy="49" rx="2.5" ry="3" fill="#111"/>
+            <!-- Smile -->
+            <path d="M50 56 Q60 63, 70 56" stroke="#f5f5f5" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- Tiny legs -->
+            <rect x="35" y="93" width="8" height="12" rx="4" fill="#333"/>
+            <rect x="77" y="93" width="8" height="12" rx="4" fill="#333"/>
+            <!-- Feet -->
+            <ellipse cx="39" cy="106" rx="7" ry="3" fill="#222"/>
+            <ellipse cx="81" cy="106" rx="7" ry="3" fill="#222"/>
         </svg>
     </div>
 
-    <!-- Mascot entrance script -->
+    <!-- Scripts -->
     <script>
-        // Show mascot after 2-second delay
+        // Mascot entrance after 2-second delay
         setTimeout(function() {
             document.getElementById('mascot').classList.add('mascot-visible');
         }, 2000);
+
+        // Lightbox
+        document.addEventListener('DOMContentLoaded', function () {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+
+            document.querySelectorAll('.gallery-item img').forEach(function (img) {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function () {
+                    lightboxImg.src = this.src;
+                    lightboxImg.alt = this.alt;
+                    lightbox.classList.add('lightbox-open');
+                });
+            });
+
+            lightbox.addEventListener('click', function () {
+                lightbox.classList.remove('lightbox-open');
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('lightbox-open');
+                }
+            });
+        });
     </script>
 </body>
 </html>
